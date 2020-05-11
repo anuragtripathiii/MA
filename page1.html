@@ -12,11 +12,9 @@
 
 
     body{
-        background-image:url("ezgif.com-video-to-gif.gif") ;
+        background:linear-gradient(to bottom,black,black);
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-attachment: fixed;
+        height: 2000px;
     }
 
 
@@ -136,15 +134,28 @@
     {
         opacity: 0.9;
     }
-    @media screen and (max-width:300px) {
+    @media screen and (max-width:650px) {
+        .borderlogin a:hover{
+
+            color: red;
+            background-color: #a5ffeb;
+            text-decoration-color: #ff1f33;
+            border: solid 2px red;
+            transition: border-width 0.5s linear;
+        }
+        body{
+            height: 2000px;
+        }
         .centerr {
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
             float: none;
+            position: absolute;
             width: auto;
         }
 
         .center2 {
+            position: absolute;
             font-size: 15px;
             top: 45%;
             width: auto;
