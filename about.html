@@ -46,16 +46,17 @@
 
 
         }
-        .hr{
-            width: 500px;
-            height: 2px;
-            color: black;
-            position: absolute;
-            color: #fff4f4;
-            top: 74%;
-            left: 34%;
-            background-color: red;
+        .leftcornericon{
+            position: fixed;
+            top: 3%;
+            left: 4%;
+            width: 5%;
+            height: 5%;
+            transform: translate(-50%,-50%);
+            display: inline;
+            filter: contrast(200%);
         }
+
         .name{
             position: relative;
             font-weight: bold;
@@ -90,6 +91,9 @@
             .hr{
                 display: none;
             }
+            .leftcornericon{
+                display: none;
+            }
             
         }
 
@@ -97,6 +101,7 @@
 </head>
 <body>
 <div>
+    <a href="page1.html"><img class="leftcornericon" src="circle-cropped.png"></a>
     <div class="container">
 
 <p class=" jumbotron faculty">Faculty</p>
