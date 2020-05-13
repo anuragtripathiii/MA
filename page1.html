@@ -12,7 +12,7 @@
 
 
     body{
-        background: linear-gradient(to top,black,black);
+        background: linear-gradient(to top,red,black);
         position: page ;
         background-repeat:repeat;
         width: 100%;
@@ -36,8 +36,7 @@
         width:60%;
         /*height: 250%;*/
         top: 55%;
-        left: 35%;
-        right: 30%;
+        left: 37%;
         color: #ff5519;
         font-size: 40px;
     }
@@ -61,16 +60,16 @@
    }
    .leftcornerr{
        position: fixed;
-       top: 0.5%;
+       top: 0.8%;
        left: 7.5%;
        right: 5%;
-       width: 19%;
-       height: 5%;
+       width: 69%;
+       height: 2%;
        color: red;
    }
     .borderlogin{
         position: absolute;
-        right: 48%;
+        right: 44%;
         top: 69%;
         height: 4%;
         width: 100px;
@@ -104,7 +103,7 @@
     .contact {
         position: fixed;
         right: 2.5%;
-        top: 7%;
+        top: 12%;
         height: 4.2%;
         background: none;
         color: #e6a142;
@@ -117,7 +116,7 @@
     {
         position: fixed;
         right: 2%;
-        top: 12%;
+        top: 7%;
         height: 4.2%;
         background: none;
         font-size: 20px;
@@ -125,16 +124,41 @@
         color: #e6a142;
         text-decoration: none;
     }
+    a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
     .enqiry:hover
     {
         opacity:0.8;
+        color: lightblue;
+        text-decoration: underline;
+        text-underline-color: #fff4f4;
+
     }
     .about:hover
     {
         opacity: 0.9;
+        color: lightblue;
+
     }
     .contact:hover{
         opacity: 0.9;
+        color: lightblue;
+
     }
 
     .foot{
@@ -182,7 +206,7 @@
         }
 
         .enqiry {
-            right: 200px;
+            right: 26%;
             display: inline;
             top: 2%;
             font-size: 20px;
@@ -215,7 +239,7 @@
             height: 30px;
             width: 89px;
             border-color: #ff1f33;
-            background-color: #fff4f4;
+            background-color: transparent;
 
 
         }
@@ -227,6 +251,16 @@
         }
 
 
+    }
+    .blinking{
+        animation:blinkingText 1.2s infinite;
+    }
+    @keyframes blinkingText{
+        0%{     color: gray;    }
+        49%{    color: white; }
+        60%{    color: transparent; }
+        99%{    color:yellow;  }
+        100%{   color: white;    }
     }
 
     @media only screen and (max-width: 1343px) and (min-width: 651px) {
@@ -250,9 +284,9 @@
 
 
 <h5>
-    <img src="masters%20academy.png "class="leftcornerr">
-    <a href="masters.jpg"target="_blank">
-        <img src="output-onlinepngtools-2.png" class="leftcornericon">
+    <h1 class="leftcornerr">MASTER'S ACADEMY</h1>
+    <a href="#"target="_blank">
+        <img src="circle-cropped.png" class="leftcornericon">
     </a>
 </h5>
 <p class="centerr">MASTER'S ACADEMY</p>
@@ -261,12 +295,12 @@
 <div class="borderlogin">
 
         <h2 style="color: white">
-            <a  href="https://forms.gle/HM7i18kTNo5Mog7U8" target="_blank" style="text-decoration: none" title="login yourself here"><span style="color: red"> Register</span></a>
+            <a  href="https://forms.gle/T9kW8KnMZTDVRQrQ8" target="_blank" style="text-decoration: none" title="login yourself here"><span style="color: red"><span class="blinking">Register</span></a>
         </h2>
 </div>
     <a class="about" href="about.html" >Faculty</a>
 </h4>
-<a href="aboutus.html" class="enqiry" style="text-decoration: none" target="_blank">About Us</a>
+<a href="aboutus.html" class="enqiry" style="text-decoration: none">About Us</a>
 <h3 class="contact"><a class="contact" href="contact.html">Contact</a></h3>
 
 <span class="foot">&copy; masters academy 2020<br><br>Designed & Developed by <a href="https://www.instagram.com/anurag.tripathii/">Anurag Tripathi</a></span>
