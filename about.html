@@ -11,13 +11,14 @@
     <style>
         .faculty{
             text-align: center;
-            left: 45%;
+            left: 40%;
+            top: 20%;
             font-size: 50px;
             font-weight: bold;
         }
         .f1{
             position: absolute;
-            top: 26%;
+            top: 28%;
             height: 350px;
             width: 240px;
             border: 2px solid gray;
@@ -27,7 +28,7 @@
         }
         .f2{
             position: absolute;
-            top: 26%;
+            top: 28%;
             height: 350px;
             width: 240px;
             border: 2px solid gray;
@@ -37,7 +38,7 @@
         .f3{
 
             position: absolute;
-            top: 26%;
+            top: 28%;
             height: 350px;
             width: 240px;
             border: 2px solid gray;
@@ -78,15 +79,57 @@
             color: #fff4f4;
             text-align: center;
         }
+        .scroll{
+            background-color: white;
+            top: 18%;
+            padding: 5px;
+            height: 55px;
+            position: absolute;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            display: inline-flex;
+            padding-top: 0px;
+            width: 1110px;
+        }
+        .run{
+            animation: marquee 0s linear infinite;
+        }
+        @keyframes marquee {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+
+
+        }
         @media only screen and (max-width:1031px ) {
+            .f1{
+                top: 30%;
+            }
             .f2{
-                top: 87%;
+                top: 92%;
                 left: 10%;
 
             }
             .f3{
-                top: 150%;
+                top: 155%;
                 left: 10%;
+            }
+            .run{
+                animation: marquee 0s linear infinite;
+            }
+            @keyframes marquee {
+                0%{
+                    transform: translateX(100%);
+                }
+                100%{
+                    transform: translateX(-100%);
+                }
+
+
             }
             .hr{
                 display: none;
@@ -95,6 +138,20 @@
                 left: 50%;
                 width: 50px;
                 position: absolute;
+            }
+            .scroll{
+                display: inline;
+                overflow: scroll;
+                background-color: white;
+                top: 16%;
+                padding: 5px;
+                height: 65px;
+                color: black;
+                font-size: 20px;
+                padding-top: 0px;
+                width: 340px;
+
+
             }
 
             
@@ -107,7 +164,8 @@
     <a href="page1.html"><img class="leftcornericon" src="circle-cropped.png"></a>
     <div class="container">
 
-<p class=" jumbotron faculty">Faculty</p>
+        <p class=" jumbotron faculty">Faculty</p>
+        <p class="scroll run"> All the faculties are highly competent, well qualified, having an experience of more than 15 years in teaching industry. Apart from these regular faculties we also organise special guest lectures for the students.   </p>
     </div>
     <div class="f1">  <img src="papa.jpeg" class="mx-auto d-block" style="width:100%;height: 250px">
         <h3 class="name">A Tripathi</h3>
